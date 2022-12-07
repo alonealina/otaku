@@ -21,20 +21,21 @@
     @if(!$isMobile)
     <div id="registration_pc">
         <body>
+            @if (\Route::currentRouteName() != 'work')
             <header>
-                <div class="header_logo"><a href="{{ route('index') }}">OTAKU</a></div>
-                <div class="header_menu">
+                <div class="header_logo" id="header_logo"><a href="{{ route('index') }}">OTAKU</a></div>
+                <div class="header_menu" id="header_menu">
                     <a href="" class="">MEMBER</a><br>
                     <a href="" class="">COMPANY</a><br>
                     <a href="" class="">CREATIVE WORK</a><br>
                     <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="">SNS　<img src="{{ asset('img/yazi.png') }}"></a><br>
                 </div>
             </header>
-
+            @endif
 
             @yield('content')
 
-            <footer>
+            <footer @if (\Route::currentRouteName() == 'work') style="background: #011E40;" @endif >
                 <div class="footer_menu_flex">
                     <div class=""><a href="{{ route('contact') }}"><img src="{{ asset('img/yazi.png') }}">　Contact Form</a></div>
                     <div class="footer_text">THOSE WHO KNOW ONLY ONE <br> COUNTRY KNOW NO COUNTRY</div>

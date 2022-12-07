@@ -10,22 +10,26 @@
         @csrf
         <div class="contact_flex">
             <div class="contact_name">Name</div>
-            <input class="form_text" placeholder="" name="name" type="text">
+            <input class="form_text" placeholder="" name="name" type="text" id="name">
         </div>
 
         <div class="contact_flex">
             <div class="contact_name">Phone number</div>
-            <input class="form_text" placeholder="" name="tel" type="text">
+            <input class="form_text" placeholder="" name="tel" type="text" id="tel">
         </div>
 
         <div class="contact_flex">
             <div class="contact_name">E-mail</div>
-            <input class="form_text" placeholder="" name="mail" type="text">
+            <input class="form_text" placeholder="" name="mail" type="text" id="mail">
         </div>
 
         <div class="contact_flex">
             <div class="contact_name">Message</div>
-            <textarea class="form_textarea" name="content"></textarea>
+            <textarea class="form_textarea" name="content" id="content"></textarea>
+        </div>
+        <div class="contact_flex">
+            <div class=""></div>
+            <div class="error_message" id="error_message"></div>
         </div>
 
         <div class="send_button" style="margin-top:50px;">

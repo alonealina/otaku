@@ -1,17 +1,67 @@
-function clickMailButton() {
+window.onload = function() {
+    $('#header_logo').css( 'left', '0px' );
+    $('#header_menu').css( 'right', '0px' );
+    setTimeout( ()=>{    $('#main_img').css( 'opacity', '1' );} ,1000);
 
+ }
+
+
+ $(window).scroll(function(){
+    var top = $("#top_black2").offset().top; // ターゲットの位置取得
+    var position = top - $(window).height();  // 発火させたい位置
+    if($(window).scrollTop() > position){
+        $('#top_white1').css( 'right', '0px' );
+        setTimeout( ()=>{    $('#top_white2').css( 'right', '0px' );} ,1000);
+        setTimeout( ()=>{    $('#top_black1').css( 'right', '0px' );} ,1500);
+        setTimeout( ()=>{    $('#top_black2').css( 'right', '0px' );} ,2000);
+        setTimeout( ()=>{    $('#big_text1').css( 'transition', '1s' );} ,3000);
+        setTimeout( ()=>{    $('#big_text1').css( 'opacity', '1' );} ,3001);
+        setTimeout( ()=>{    $('#otaku_text1').css( 'transition', '1s' );} ,4000);
+        setTimeout( ()=>{    $('#otaku_text1').css( 'opacity', '1' );} ,4001);
+    }else{
+      // それ以外の動き
+    }
+  })
+
+
+
+
+
+
+
+function clickMailButton() {
+    error_flg = 0;
+    var error_message = document.getElementById('error_message');
     if (mail_form.name.value == ""){
-        alert("お名前を入力してください");
-        return false;
-    } else if (mail_form.tel.value == ""){
-        alert("電話番号を入力してください");
-        return false;
-    } else if (mail_form.mail.value == ""){
-        alert("メールアドレスを入力してください");
-        return false;
-    } else if (mail_form.content.value == ""){
-        alert("お問い合わせ内容を入力してください");
-        return false;
+        $('#name').css( 'background', '#FFE1E1' );
+        error_flg = 1;
+    } else {
+        $('#name').css( 'background', '#fff' );
+    }
+
+    if (mail_form.tel.value == ""){
+        $('#tel').css( 'background', '#FFE1E1' );
+        error_flg = 1;
+    } else {
+        $('#tel').css( 'background', '#fff' );
+    }
+
+    if (mail_form.mail.value == "" || !(mail_form.mail.value.match(/.+@.+\..+/)) ){
+        $('#mail').css( 'background', '#FFE1E1' );
+        error_flg = 1;
+    } else {
+        $('#mail').css( 'background', '#fff' );
+    }
+
+    if (mail_form.content.value == ""){
+        $('#content').css( 'background', '#FFE1E1' );
+        error_flg = 1;
+    } else {
+        $('#content').css( 'background', '#fff' );
+    }
+
+    if (error_flg) {
+        error_message.innerHTML = '※不足している項目があります。';
     } else {
         document.forms.mail_form.submit();
     }

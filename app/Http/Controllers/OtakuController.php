@@ -12,6 +12,11 @@ class OtakuController extends Controller
         return view('index');
     }
 
+    public function work()
+    {
+        return view('work');
+    }
+
     public function contact()
     {
         return view('contact');
@@ -39,7 +44,7 @@ class OtakuController extends Controller
 
     public function mail_comp()
     {
-        return view('contact');
+        return view('mail_comp');
     }
 
 

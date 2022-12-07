@@ -2,13 +2,15 @@
 
 
 @section('content')
-<img src="{{ asset('img/otaku_main.png') }}" class="main_img">
+<img src="{{ asset('img/otaku_main.png') }}" class="main_img" id="main_img">
 <div class="bg_bw">
-    <div class="top_white1">株式会社おたくは</div>
-    <div class="top_black1">各専門分野が集まった</div>
-    <div class="top_black1">プロフェッショナルチームです</div>
-    <img src="{{ asset('img/otaku_text.png') }}" class="otaku_text_img">
-    <div class="otaku_text">
+    <div class="top_white1" id="top_white1" style="color:#fff;top: 80px;">株式会社おたくは</div>
+    <div class="top_white1" id="top_white2">株式会社おたくは</div>
+    <div class="top_black1" id="top_black1">各専門分野が集まった</div>
+    <div class="top_black1" id="top_black2">プロフェッショナルチームです</div>
+    <div class="otaku_big_text" id="big_text1">OTAKU WA SAIKYOU NANO DESU</div>
+
+    <div class="otaku_text" id="otaku_text1">
         株式会社おたくとは。<br><br>
         2020年2月、世界最悪のパンデミックが起きました。<br>
         将来の日本をどのようにするべきか、各専門分野の有志が集まり、世界と戦えるチームが私達です。<br><br>
@@ -56,27 +58,37 @@
         <div class="strategy-paragraph"><div class="strategy-paragraph-image"></div> WON'T LOSE</div>
         <div class="strategy-paragraph">NO MATTER WHAT</div>
         <div class="strategy-paragraph">/ <span class="strategy-paragraph-text">眠らない兎は負けない</span></div>
-        <p class="strategy-description">裏技、必殺技、抜け道。<br >
-            魔法のようにあざやかに事業課題を解決できる手段は存在しません。<br >
-
-            まずはしっかりヒアリングをします。いつも解決策は、すでに潜在しているからです。
-            企業やブランドに存在しているけれど言語化されていないものを掘り起こし、従業員も理解・納得し、今の時代に合うように明文化していくことが大切だと考えます。
+        <p class="strategy-description">裏技、必殺技、抜け道。<br>
+        魔法のようにあざやかに課題を解決できる方法は一切存在しません。<br>
+        まずはしっか分解、分析をします。いつも解決策は、課題の中にあるからです。<br>
+        事業を 分解し、すべてを分析し、言語化されていないものを掘り起こし、従業員も理解・納得し、<br>
+        今の時代に合うように明文化していくことが大切だと考えます。
         </p>
     </div>
     <div class="profile-service_title">Service</div>
     <div class="profile-service_content">
         <ul class="service"><li class="service-item"><div class="service-item_num">01</div>
-        <h3 class="service-item_subtitle">Creative Work</h3> <dl ><dt class="service-item_title">デザイン・開発</dt>
-        <dd class="service-item_desc">web制作やデザインを起点に企業ステートメントやカルチャーを再定義し、売り上げと企業認知に貢献します。</dd></dl></li>
-        <li class="service-item"><div class="service-item_num">02</div> <h3 class="service-item_subtitle">Eduction</h3> <dl ><dt class="service-item_title">教育支援</dt>
-        <dd class="service-item_desc">事業会社のWeb部門の教育とマネジメントシステムの構築を行います。</dd></dl></li>
-        <li class="service-item"><div class="service-item_num">03</div> <h3 class="service-item_subtitle">Social Good</h3>
-        <dl ><dt class="service-item_title">心地よいもの</dt> <dd class="service-item_desc">人間にとっても、地球にとっても、動物にとっても心地いいものを作ります。</dd></dl></li>
-        <li class="service-item"><div class="service-item_num">04</div> <h3 class="service-item_subtitle">Owned Media</h3>
-        <dl ><dt class="service-item_title">メディア制作</dt> <dd class="service-item_desc">オウンドメディアで積み上げた知識をもとに、認知拡大を目的にした企画・改善・執筆を行います。</dd></dl></li></ul>
+        <h3 class="service-item_subtitle">Prodact Work</h3> <dl ><dt class="service-item_title">プロダクトデザイン・開発</dt>
+        <dd class="service-item_desc">オリジナルアイテムをデザインから納品まで一気通貫で制作いたします。</dd></dl></li>
+        <li class="service-item"><div class="service-item_num">02</div> <h3 class="service-item_subtitle">Creative Work</h3> <dl ><dt class="service-item_title">デザイン・開発</dt>
+        <dd class="service-item_desc">webデザイン、制作を企業のスタイル</dd></dl></li>
+        <li class="service-item"><div class="service-item_num">03</div> <h3 class="service-item_subtitle">Owned Media</h3>
+        <dl ><dt class="service-item_title">建築・内装</dt> <dd class="service-item_desc">人間にとっても、地球にとっても、動物にとっても心地いいものを作ります。</dd></dl></li>
+        <li class="service-item"><div class="service-item_num">04</div> <h3 class="service-item_subtitle">Store Operation</h3>
+        <dl ><dt class="service-item_title">店舗運営</dt> <dd class="service-item_desc">店舗の仕入、運営、卸まで一気通貫で行っています。</dd></dl></li></ul>
     </div>
-
 </div>
+
+<section class="latestwork">
+    <h2 class="profile-title ">Creative Work</h2> 
+    <div class="member-subtitle">/ PICK UP CASE STUDY</div> 
+    <ul class="latestwork-lists latestwork_content">
+        <li class="latestwork-list"><a href="" class="coffee_a"><p class="latestwork-list-project">兎珈琲</p></a>
+        <a href="/creativework/spohabi/" class="circle_a"><div class="latestwork-list-link"><div class="circle-link circle-link-domestic"><div class="circle-link-circle"></div>
+        <span class="circle-link-text">View More</span></div></div></a></li>
+    </ul>
+</section>
+
 @endsection
 
 
