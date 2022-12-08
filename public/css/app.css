@@ -95,31 +95,34 @@ footer a:hover {
 }
 .bg_bw {
     background-image: url(../img/bg_bw.png);
+    background-position: center;
     background-size: cover;
     width: 100%;
     padding: 120px 0;
+    margin-bottom: 100px;
 }
 .top_white1 {
-    width: 460px;
-    padding: 20px 70px;
+    width: calc(140px + 20vw);
+    padding: 20px 60px;
     display: block;
     margin-right: 0%;
     margin-left: auto;
-    font: normal normal bold 40px/40px Ryumin;
+    font: normal normal bold 2.5vw/2.5vw Ryumin;
     letter-spacing: 0px;
     color: #000000;
     background-color: #fff;
     right: -50%;
     position: relative;
     transition: 1s;
+    text-align: right;
 }
 .top_black1 {
     width: 100%;
-    padding: 20px 70px;
+    padding: 20px 60px;
     display: block;
     margin-right:0%;
     margin-left: auto;
-    font: normal normal bold 40px/40px Ryumin;
+    font: normal normal bold 2.5vw/2.5vw Ryumin;
     letter-spacing: 0px;
     color: #fff;
     text-align: right;
@@ -132,7 +135,7 @@ footer a:hover {
 .otaku_big_text {
     width: 96%;
     margin: 100px auto;
-    font: normal normal 900 5vw Futura;
+    font: normal normal 900 4.7vw Futura;
     text-align: center;
     letter-spacing: 5px;
     mix-blend-mode: difference;
@@ -148,20 +151,30 @@ footer a:hover {
     mix-blend-mode: difference;
     opacity: 0;
 }
+#member_border, #profile_border {
+    border-top: 1px solid #747474;
+    width: 0%;
+    transition: 1s;
+    margin-left: 4.5%;
+}
 .member {
     display: grid;
     grid-template-columns: 29.2682926829% 70.7317073171%;
     grid-template-rows: auto;
     padding-top: 10px;
-    margin: 0 4.4444444444% 140px;
+    margin: 0 4.5% 140px;
     position: relative;
-    border-top: 1px solid #747474;
+    transition: 1s;
 }
 .member-title {
     font-size: 2.3611111111vw;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: -.01em;
+    opacity: 0;
+    transition: 1s;
+    top: 100px;
+    position: relative;
 }
 .member-subtitle {
     align-self: center;
@@ -169,6 +182,10 @@ footer a:hover {
     font-size: 1.2rem;
     letter-spacing: -.01em;
     font: normal normal normal 9px/10px Arial;
+    opacity: 0;
+    transition: 1s;
+    top: 100px;
+    position: relative;
 }
 .member-content {
     display: grid;
@@ -191,6 +208,9 @@ footer a:hover {
     font: normal normal normal 17px/20px Arial;
     letter-spacing: 0px;
     color: #000000;
+    opacity: 0;
+    transition: 1s;
+    margin-left:200px;
 }
 .member_item-position {
     display: block;
@@ -199,11 +219,18 @@ footer a:hover {
     font: normal normal normal 9px/10px Arial;
     letter-spacing: 0px;
     color: #000000;
+    opacity: 0;
+    transition: 1s;
+    margin-left:200px;
 }
 .member_item-desc {
     font: normal normal normal 9px/14px Arial;
     letter-spacing: 0px;
     color: #000000;
+    opacity: 0;
+    transition: 1s;
+    left: 200px;
+    position: relative;
 }
 .profile {
     display: grid;
@@ -212,7 +239,6 @@ footer a:hover {
     padding-top: 10px;
     margin: 0 4.4444444444% 12.5%;
     position: relative;
-    border-top: 1px solid #747474;
 }
 .profile-title {
     margin-bottom: 148px;
@@ -220,6 +246,10 @@ footer a:hover {
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: -.01em;
+    opacity: 0;
+    transition: 1s;
+    top: 100px;
+    position: relative;
 }
 .profile-subtitle {
     grid-column: 2/5;
@@ -229,14 +259,28 @@ footer a:hover {
     letter-spacing: -.01em;
     line-height: 1;
     align-self: flex-start;
+    opacity: 0;
+    transition: 1s;
+    top: 100px;
+    position: relative;
 }
 .profile-logo {
     grid-column: 1/5;
     grid-row: 2/3;
-    font: normal normal bold 143px/156px Arial;
+    font: normal normal bold 9.5vw Arial;
     letter-spacing: 0px;
     color: #000000;
     margin-bottom: 8.0792682927%;
+    opacity: 0;
+    transition: 1s;
+    top: 100px;
+    position: relative;
+}
+.profile-row {
+    position: relative;
+    left: 300px;
+    transition: 1s;
+    opacity: 0;
 }
 .profile-info {
     grid-column: 3/5;
@@ -247,6 +291,7 @@ footer a:hover {
 }
 .profile-row>th:first-child {
     width: 27%;
+    vertical-align: baseline;
 }
 .profile-row>td:nth-child(2) {
     width: 73%;
@@ -265,9 +310,10 @@ footer a:hover {
 .strategy-paragraph-image {
     display: inline-block;
     height: 8vw;
-    width: 31vw;
+    width: 0vw;
     background: #000;
     transform: translateY(1vw);
+    transition: 1s;
 }
 .strategy-paragraph-text {
     font-size: 2rem;
@@ -275,6 +321,8 @@ footer a:hover {
     padding-top: 60px;
     letter-spacing: 0;
     letter-spacing: .02em;
+    position: relative;
+    top: 100px;
 }
 .strategy-paragraph:nth-child(5) {
     margin-left: 15vw;
@@ -286,18 +334,16 @@ footer a:hover {
 .strategy-paragraph-text br {
     display: none;
 }
+.st_text, .strategy-paragraph-text, .strategy-description, .sv_text, .latestwork-list {
+    opacity: 0;
+    transition: 1s;
+}
+
 .strategy-description {
     width: 40vw;
     margin-left: 44.1176470588%;
     margin-bottom: 80px;
     font: normal normal normal 15px/25px Arial;
-}
-.profile-service_title {
-    grid-column: 2/3;
-    grid-row: 5/5;
-    font-size: 2.3rem;
-    text-transform: uppercase;
-    letter-spacing: -.01em;
 }
 .profile-service_content {
     grid-column: 3/4;
@@ -309,6 +355,8 @@ footer a:hover {
     font: normal normal normal 16px/27px Arial;
     text-transform: uppercase;
     letter-spacing: -.01em;
+    opacity: 0;
+    transition: 1s;
 }
 .profile-service_content {
     grid-column: 3/4;
@@ -324,12 +372,15 @@ footer a:hover {
 }
 .service-item {
     padding-top: 10px;
-    border-top: 1px solid #747474;
     position: relative;
 }
 .service-item_num {
     font-size: 5.3472222222vw;
     line-height: 1.2;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    transition: 1s;
 }
 .service-item_subtitle {
     margin-bottom: 22px;
@@ -345,6 +396,22 @@ footer a:hover {
 .service-item_desc {
     font: normal normal normal 11px/18px Arial;
 }
+.sv_border {
+    border-top: 1px solid #747474;
+    width: 0%;
+    transition: 1s;
+}
+#work_border1, #work_border2 {
+    border-top: 1px solid #747474;
+    width: 0%;
+    transition: 1s;
+}
+
+#work_border1 {
+    margin-left: 4.5%;
+}
+
+
 li {
     list-style: none;
 }
@@ -353,8 +420,7 @@ li {
     grid-template-columns: 29.2682926829% 14.6341463415% 56.0975609756%;
     grid-template-rows: auto;
     padding-top: 10px;
-    margin: 0 4.4444444444% 12.5%;
-    border-top: 1px solid #747474;
+    margin: 0 5% 12.5%;
 }
 .latestwork .profile-title {
     margin-bottom: 0;
@@ -378,7 +444,6 @@ li {
     margin-top: -2.7vw;
 }
 .latestwork-list {
-    border-bottom: 1px solid #747474;
     padding: 3.1vw 0;
     display: flex;
     align-items: center;
@@ -461,6 +526,35 @@ li {
 
 .work_img1 {
     width:100%;
+    display: block;
+    margin-bottom: 100px;
+}
+.work_img2 {
+    width:95%;
+    display: block;
+    margin-bottom: 100px;
+}
+.work_img3 {
+    width:100%;
+    display: block;
+    margin-bottom: 100px;
+}
+.work_img4 {
+    width:95%;
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 100px;
+}
+.work_img5 {
+    width:95%;
+    display: block;
+    margin-bottom: 100px;
+}
+.work_img6 {
+    width:95%;
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 100px;
 }
 
 

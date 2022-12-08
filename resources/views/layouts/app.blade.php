@@ -25,9 +25,15 @@
             <header>
                 <div class="header_logo" id="header_logo"><a href="{{ route('index') }}">OTAKU</a></div>
                 <div class="header_menu" id="header_menu">
-                    <a href="" class="">MEMBER</a><br>
-                    <a href="" class="">COMPANY</a><br>
-                    <a href="" class="">CREATIVE WORK</a><br>
+                    @if (\Route::currentRouteName() == 'index')
+                    <a href="#member" class="">MEMBER</a><br>
+                    <a href="#company" class="">COMPANY</a><br>
+                    <a href="#work" class="">CREATIVE WORK</a><br>
+                    @else
+                    <a href="{{ route('index') }}#member" class="">MEMBER</a><br>
+                    <a href="{{ route('index') }}#company" class="">COMPANY</a><br>
+                    <a href="{{ route('index') }}#work" class="">CREATIVE WORK</a><br>
+                    @endif
                     <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="">SNS　<img src="{{ asset('img/yazi.png') }}"></a><br>
                 </div>
             </header>
@@ -42,11 +48,17 @@
                 </div>
 
                 <div class="footer_menu_flex">
-                    <div class="{{ route('mail_send') }}"></div>
+                    <div></div>
                     <div class="footer_menu">
-                        <a href="" class="">MEMBER</a>　
-                        <a href="" class="">COMPANY</a>　
-                        <a href="" class="">CREATIVE WORK</a>　
+                        @if (\Route::currentRouteName() == 'index')
+                        <a href="#member" class="">MEMBER</a>　
+                        <a href="#company" class="">COMPANY</a>　
+                        <a href="#work" class="">CREATIVE WORK</a>　
+                        @else
+                        <a href="{{ route('index') }}#member" class="">MEMBER</a>　
+                        <a href="{{ route('index') }}#company" class="">COMPANY</a>　
+                        <a href="{{ route('index') }}#work" class="">CREATIVE WORK</a>　
+                        @endif
                         <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="">SNS</a>
                     </div>
                 </div>
