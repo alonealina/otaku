@@ -11,7 +11,8 @@ window.onload = function() {
     var position1 = top1 - $(window).height();  // 発火させたい位置
 
     if ($(window).scrollTop() > position1){
-        $('#top_white1').css( 'right', '0px' );
+        $('#bg_bw').css( 'right', '0px' );
+        setTimeout( ()=>{    $('#top_white1').css( 'right', '0px' );} ,500);
         setTimeout( ()=>{    $('#top_white2').css( 'right', '0px' );} ,1000);
         setTimeout( ()=>{    $('#top_black1').css( 'right', '0px' );} ,1500);
         setTimeout( ()=>{    $('#top_black2').css( 'right', '0px' );} ,2000);
@@ -113,48 +114,4 @@ window.onload = function() {
 
 
 })
-
-
-
-
-
-
-
-function clickMailButton() {
-    error_flg = 0;
-    var error_message = document.getElementById('error_message');
-    if (mail_form.name.value == ""){
-        $('#name').css( 'background', '#FFE1E1' );
-        error_flg = 1;
-    } else {
-        $('#name').css( 'background', '#fff' );
-    }
-
-    if (mail_form.tel.value == ""){
-        $('#tel').css( 'background', '#FFE1E1' );
-        error_flg = 1;
-    } else {
-        $('#tel').css( 'background', '#fff' );
-    }
-
-    if (mail_form.mail.value == "" || !(mail_form.mail.value.match(/.+@.+\..+/)) ){
-        $('#mail').css( 'background', '#FFE1E1' );
-        error_flg = 1;
-    } else {
-        $('#mail').css( 'background', '#fff' );
-    }
-
-    if (mail_form.content.value == ""){
-        $('#content').css( 'background', '#FFE1E1' );
-        error_flg = 1;
-    } else {
-        $('#content').css( 'background', '#fff' );
-    }
-
-    if (error_flg) {
-        error_message.innerHTML = '※不足している項目があります。';
-    } else {
-        document.forms.mail_form.submit();
-    }
-}
 

@@ -34,7 +34,7 @@
                     <a href="{{ route('index') }}#company" class="">COMPANY</a><br>
                     <a href="{{ route('index') }}#work" class="">CREATIVE WORK</a><br>
                     @endif
-                    <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="">SNS　<img src="{{ asset('img/yazi.png') }}"></a><br>
+                    <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank">SNS　<img src="{{ asset('img/yazi.png') }}"></a><br>
                 </div>
             </header>
             @endif
@@ -111,9 +111,7 @@
     </div>
     @endif
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/app_sp.js') }}"></script>
     <script src="{{ asset('js/slick.js') }}"></script>
     <script src="{{ asset('js/recruit.js') }}"></script>

@@ -3,7 +3,7 @@
 
 @section('content')
 <img src="{{ asset('img/otaku_main.png') }}" class="main_img" id="main_img">
-<div class="bg_bw">
+<div class="bg_bw" id="bg_bw">
     <div class="top_white1" id="top_white1" style="color:#fff;top: calc(2.5vw + 40px);">株式会社おたくは</div>
     <div class="top_white1" id="top_white2">株式会社おたくは</div>
     <div class="top_black1" id="top_black1">各専門分野が集まった</div>
@@ -97,6 +97,8 @@
         <div id="work_border2"></div>
     </ul>
 </section>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="{{ asset('js/index.js') }}"></script>
 
 @endsection
 
