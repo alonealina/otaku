@@ -13,6 +13,7 @@ $(window).scroll(function(){
         setTimeout( ()=>{    $('#work2_icon').css( 'opacity', '1' );} ,700);
         setTimeout( ()=>{    $('#work2_text').css( 'opacity', '1' );} ,700);
         setTimeout( ()=>{    $('#work2_img').css( 'opacity', '1' );} ,700);
+        setTimeout( ()=>{    $('#work2_img_sp').css( 'opacity', '1' );} ,700);
     } 
 
     var top2 = $("#work3").offset().top; // ターゲットの位置取得
@@ -26,6 +27,7 @@ $(window).scroll(function(){
         setTimeout( ()=>{    $('#work3_title').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work3_text').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work3_img').css( 'opacity', '1' );}  ,1500);
+        setTimeout( ()=>{    $('#work3_img_sp').css( 'opacity', '1' );}  ,1500);
     } 
 
     var top3 = $("#work4").offset().top; // ターゲットの位置取得
@@ -33,12 +35,14 @@ $(window).scroll(function(){
 
     if ($(window).scrollTop() > position3){
         $('#work4_bar').css( 'width', '80%' );
+        $('#work4_bar_sp').css( 'width', '100%' );
         setTimeout( ()=>{    $('#work4_green1').css( 'opacity', '1' );} ,700);
         setTimeout( ()=>{    $('#work4_green1').css( 'margin-top', '0px' );} ,700);
         setTimeout( ()=>{    $('#work4_green2').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work4_title').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work4_text').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work4_img').css( 'opacity', '1' );}  ,1500);
+        setTimeout( ()=>{    $('#work4_img_sp').css( 'opacity', '1' );}  ,1500);
     } 
 
     var top4 = $("#work5").offset().top; // ターゲットの位置取得
@@ -46,11 +50,13 @@ $(window).scroll(function(){
 
     if ($(window).scrollTop() > position4){
         $('#work5_bar').css( 'width', '80%' );
+        $('#work5_bar_sp').css( 'width', '100%' );
         setTimeout( ()=>{    $('#work5_green1').css( 'opacity', '1' );} ,700);
         setTimeout( ()=>{    $('#work5_green1').css( 'margin-top', '0px' );} ,700);
         setTimeout( ()=>{    $('#work5_green2').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work5_title').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work5_img').css( 'opacity', '1' );}  ,1500);
+        setTimeout( ()=>{    $('#work5_img_sp').css( 'opacity', '1' );}  ,1500);
     } 
 
     var top5 = $("#work6").offset().top; // ターゲットの位置取得
@@ -58,12 +64,14 @@ $(window).scroll(function(){
 
     if ($(window).scrollTop() > position5){
         $('#work6_bar').css( 'width', '80%' );
+        $('#work6_bar_sp').css( 'width', '100%' );
         setTimeout( ()=>{    $('#work6_green1').css( 'opacity', '1' );} ,700);
         setTimeout( ()=>{    $('#work6_green1').css( 'margin-top', '0px' );} ,700);
         setTimeout( ()=>{    $('#work6_green2').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work6_title').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work6_text').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work6_img').css( 'opacity', '1' );}  ,1500);
+        setTimeout( ()=>{    $('#work6_img_sp').css( 'opacity', '1' );}  ,1500);
     } 
 
     var top6 = $("#work7").offset().top; // ターゲットの位置取得
@@ -79,6 +87,7 @@ $(window).scroll(function(){
         setTimeout( ()=>{    $('#work7_detail3').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work7_detail4').css( 'opacity', '1' );} ,1500);
         setTimeout( ()=>{    $('#work7_map').css( 'opacity', '1' );} ,1500);
+        setTimeout( ()=>{    $('#work7_map_sp').css( 'opacity', '1' );} ,1500);
     } 
 
 

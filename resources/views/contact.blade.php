@@ -45,26 +45,29 @@
 
 
 @section('content_sp')
-<img src="{{ asset('img/company.png') }}" style="width: 100%;" alt="">
 <div class="contact_div_sp">
-    <div class="page_title" style="margin-bottom:30px;">CONTACT</div>
+    <form name="mail_form" action="{{ route('mail_send') }}" method="post" enctype="multipart/form-data">
+    @csrf
+        <div class="page_title_sp">CONTACT</div>
 
-    <div class="contact_name">name</div>
-    <input class="form_text_sp" placeholder="" name="name" type="text">
+        <div class="contact_name">Name</div>
+        <input class="form_text_sp" placeholder="" name="name" type="text" id="name">
 
-    <div class="contact_name">phone number</div>
-    <input class="form_text_sp" placeholder="" name="tel" type="text">
+        <div class="contact_name">Phone number</div>
+        <input class="form_text_sp" placeholder="" name="tel" type="text" id="tel">
 
-    <div class="contact_name">e-mail</div>
-    <input class="form_text_sp" placeholder="" name="mail" type="text">
+        <div class="contact_name">E-mail</div>
+        <input class="form_text_sp" placeholder="" name="mail" type="text" id="mail">
 
-    <div class="contact_name">messsge</div>
-    <textarea class="form_textarea_sp"></textarea>
-
-    <div class="send_button" style="margin-top:20px;">
-        <a href="#" onclick="clickMailButton()" style="margin:auto;">SEND</a>
-    </div>
+        <div class="contact_name">Messsge</div>
+        <textarea class="form_textarea_sp" name="content" id="content"></textarea>
+        <div class="error_message_sp" id="error_message"></div>
+        <div class="send_button" style="margin-top:20px;">
+            <a href="#" onclick="clickMailButton()" style="margin:auto;">SEND</a>
+        </div>
+    </form>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="{{ asset('js/contact.js') }}"></script>
 
 @endsection

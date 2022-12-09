@@ -37,6 +37,34 @@
                     <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank">SNS　<img src="{{ asset('img/yazi.png') }}"></a><br>
                 </div>
             </header>
+            @else
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content_work">
+                    <ul>
+                        <li>
+                            <a href="#coffee" class="menu_content">兎珈琲とは</a>
+                        </li>
+                        <li>
+                            <a href="#wall" class="menu_content">兎珈琲の壁</a>
+                        </li>
+                        <li>
+                            <a href="#stair" class="menu_content">箪笥階段</a>
+                        </li>
+                        <li>
+                            <a href="#glass" class="menu_content">昭和ガラス</a>
+                        </li>
+                        <li>
+                            <a href="#bunny" class="menu_content">バニーカステラ</a>
+                        </li>
+                        <li>
+                            <a href="#detail" class="menu_content">店舗情報</a>
+                        </li>
+                        <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank"><img src="{{ asset('img/insta.png') }}" class="header_icon_sp"></a>
+                    </ul>
+                </div>
+            </div>
             @endif
 
             @yield('content')
@@ -59,7 +87,7 @@
                         <a href="{{ route('index') }}#company" class="">COMPANY</a>　
                         <a href="{{ route('index') }}#work" class="">CREATIVE WORK</a>　
                         @endif
-                        <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="">SNS</a>
+                        <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank">SNS</a>
                     </div>
                 </div>
 
@@ -73,17 +101,16 @@
     $now_route = \Route::currentRouteName();
     @endphp
         <body>
-            <header style="padding: 10px; margin-top: 0px; border-top: none;">
-                <a class="logo_a_sp" href="/">
-                    <img src="{{ asset('img/logo_white.png') }}" class="logo_img_sp" alt="">
-                </a>
+            @if (\Route::currentRouteName() != 'work')  
+            <header style="padding: 20px; margin-top: 0px; border-top: none; position: fixed; width: 100%; z-index: 9999;">
+                <a href="{{ route('index') }}" class="logo_sp">OTAKU</a>
                 <div class="hamburger-menu">
                     <input type="checkbox" id="menu-btn-check">
                     <label for="menu-btn-check" class="menu-btn"><span></span></label>
                     <div class="menu-content">
                         <ul>
                             <li>
-                                <a href ="" class="menu_head_sp">MEMBER</a>
+                                <a href ="" class="menu_content_sp">MEMBER</a>
                             </li>
                             <li>
                                 <a href ="" class="menu_content_sp">COMPANY</a>
@@ -94,18 +121,46 @@
                             <li>
                                 <a href ="" class="menu_content_sp">CONTACT</a>
                             </li>
+                            <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank"><img src="{{ asset('img/insta.png') }}" class="header_icon_sp"></a>
                         </ul>
-                        <div class="header_icon_list">
-                            <a href=""><img src="{{ asset('img/instagram.png') }}" class="header_icon_sp"></a>
-                        </div>
                     </div>
                 </div>
             </header>
-            <div style="margin-top:62px;"></div>
+            @else
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="#coffee_sp" class="menu_content_sp">兎珈琲とは</a>
+                        </li>
+                        <li>
+                            <a href="#wall_sp" class="menu_content_sp">兎珈琲の壁</a>
+                        </li>
+                        <li>
+                            <a href="#stair_sp" class="menu_content_sp">箪笥階段</a>
+                        </li>
+                        <li>
+                            <a href="#glass_sp" class="menu_content_sp">昭和ガラス</a>
+                        </li>
+                        <li>
+                            <a href="#bunny_sp" class="menu_content_sp">バニーカステラ</a>
+                        </li>
+                        <li>
+                            <a href="#detail_sp" class="menu_content_sp">店舗情報</a>
+                        </li>
+                        <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank"><img src="{{ asset('img/insta.png') }}" class="header_icon_sp"></a>
+                    </ul>
+                </div>
+            </div>
+            @endif
+
             @yield('content_sp')
 
-            <footer class="footer_sp" style="margin-top: 30px;">
-
+            <footer class="footer_sp" style="margin-top: 30px; padding: 40px 20px;">
+                <a href="{{ route('contact') }}"><img src="{{ asset('img/yazi.png') }}">　Contact Form</a>
+                <div class="footer_text_sp">THOSE WHO KNOW<br>ONLY ONE<br>COUNTRY KNOW<br>NO COUNTRY</div>
             </footer>
         </body>
     </div>
