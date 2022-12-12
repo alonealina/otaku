@@ -12,8 +12,9 @@ window.onload = function() {
 
     if ($(window).scrollTop() > position1){
         $('#bg_black').css( 'opacity', '1' );
-        setTimeout( ()=>{    $('#top_black1').css( 'right', '0px' );} ,500);
-        setTimeout( ()=>{    $('#top_black2').css( 'right', '0px' );} ,1000);
+        setTimeout( ()=>{    $('#top_white1').css( 'right', '0px' );} ,500);
+        setTimeout( ()=>{    $('#top_black1').css( 'right', '0px' );} ,1000);
+        setTimeout( ()=>{    $('#top_black2').css( 'right', '0px' );} ,1250);
         setTimeout( ()=>{    $('#top_black3').css( 'right', '0px' );} ,1500);
         setTimeout( ()=>{    $('#big_text').css( 'transition', '1s' );} ,2000);
         setTimeout( ()=>{    $('#big_text').css( 'opacity', '1' );} ,2001);
@@ -119,3 +120,12 @@ window.onload = function() {
 
 })
 
+
+
+var menu = document.getElementsByClassName('menu_content_sp');
+
+for (i = 0; i < menu.length; i++) {
+    menu[i].addEventListener("click", function() {
+        document.getElementById('menu-btn-check').checked = false;
+  });
+}

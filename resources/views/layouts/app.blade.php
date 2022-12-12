@@ -29,10 +29,12 @@
                     <a href="#member" class="">MEMBER</a><br>
                     <a href="#company" class="">COMPANY</a><br>
                     <a href="#work" class="">CREATIVE WORK</a><br>
+                    <a href="{{ route('contact') }}" class="">CONTACT</a><br>
                     @else
                     <a href="{{ route('index') }}#member" class="">MEMBER</a><br>
                     <a href="{{ route('index') }}#company" class="">COMPANY</a><br>
                     <a href="{{ route('index') }}#work" class="">CREATIVE WORK</a><br>
+                    <a href="{{ route('contact') }}" class="">CONTACT</a><br>
                     @endif
                     <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank">SNS　<img src="{{ asset('img/yazi.png') }}"></a><br>
                 </div>
@@ -71,7 +73,7 @@
 
             <footer @if (\Route::currentRouteName() == 'work') style="background: #011E40;" @endif >
                 <div class="footer_menu_flex">
-                    <div class=""><a href="{{ route('contact') }}"><img src="{{ asset('img/yazi.png') }}">　Contact Form</a></div>
+                    <div class=""><a href="{{ route('contact') }}"><img src="{{ asset('img/yazi.png') }}" style="width: 15px;">　Contact Form</a></div>
                     <div class="footer_text">THOSE WHO KNOW ONLY ONE <br> COUNTRY KNOW NO COUNTRY</div>
                 </div>
 
@@ -106,20 +108,32 @@
                 <a href="{{ route('index') }}" class="logo_sp">OTAKU</a>
                 <div class="hamburger-menu">
                     <input type="checkbox" id="menu-btn-check">
-                    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                    <label for="menu-btn-check" class="menu-btn" style="top: 0px;right: 2%;"><span></span></label>
                     <div class="menu-content">
                         <ul>
+                            @if (\Route::currentRouteName() == 'index')
                             <li>
-                                <a href ="" class="menu_content_sp">MEMBER</a>
+                                <a href ="#member_jump" class="menu_content_sp">MEMBER</a>
                             </li>
                             <li>
-                                <a href ="" class="menu_content_sp">COMPANY</a>
+                                <a href ="#profile_jump" class="menu_content_sp">COMPANY</a>
                             </li>
                             <li>
-                                <a href ="" class="menu_content_sp">CREATIVE WORK</a>
+                                <a href ="#work_jump" class="menu_content_sp">CREATIVE WORK</a>
+                            </li>
+                            @else
+                            <li>
+                                <a href ="{{ route('index') }}#member_jump" class="menu_content_sp">MEMBER</a>
                             </li>
                             <li>
-                                <a href ="" class="menu_content_sp">CONTACT</a>
+                                <a href ="{{ route('index') }}#profile_jump" class="menu_content_sp">COMPANY</a>
+                            </li>
+                            <li>
+                                <a href ="{{ route('index') }}#work_jump" class="menu_content_sp">CREATIVE WORK</a>
+                            </li>
+                            @endif
+                            <li>
+                                <a href ="{{ route('contact') }}" class="menu_content_sp">CONTACT</a>
                             </li>
                             <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank"><img src="{{ asset('img/insta.png') }}" class="header_icon_sp"></a>
                         </ul>
@@ -159,7 +173,7 @@
             @yield('content_sp')
 
             <footer class="footer_sp" style="margin-top: 30px; padding: 40px 20px;">
-                <a href="{{ route('contact') }}"><img src="{{ asset('img/yazi.png') }}">　Contact Form</a>
+                <a href="{{ route('contact') }}"><img src="{{ asset('img/yazi.png') }}" style="width: 16px;">　Contact Form</a>
                 <div class="footer_text_sp">THOSE WHO KNOW<br>ONLY ONE<br>COUNTRY KNOW<br>NO COUNTRY</div>
             </footer>
         </body>

@@ -69,7 +69,7 @@ footer {
 }
 
 .footer_text_sp {
-    font: normal normal 300 9.5vw Bahnschrift;
+    font: normal normal 300 8.5vw sans-serif;
     text-align: right;
     margin-top: 30px;
 }
@@ -81,6 +81,11 @@ footer {
 }
 .header_logo a {
     color: #FFFFFF;
+}
+
+.header_logo a:hover, .logo_sp:hover {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .logo_sp {
@@ -155,7 +160,7 @@ footer a:hover {
     text-align: right;
     font: normal normal bold 6.4vw/45px Ryumin;
     letter-spacing: 0px;
-    right: -100%;
+    right: -110%;
     color: #FFFFFF;
     transition:1s;
     position: relative;
@@ -254,7 +259,7 @@ footer a:hover {
     margin-bottom: 140px;
     font-size: 1.2rem;
     letter-spacing: -.01em;
-    font: normal normal normal 9px/10px Arial;
+    line-height: 1;
     opacity: 0;
     transition: 1s;
     top: 100px;
@@ -556,7 +561,7 @@ li {
     margin-left: 8px;
     color: #2b2a2a;
 }
-.circle-link-circle:after, .circle-link-circle:before {
+.circle-link-circle:before {
     content: "";
     position: absolute;
     width: 40px;
@@ -567,7 +572,7 @@ li {
     display: block;
     transition: all .1s cubic-bezier(.19,1,.22,1);
 }
-.circle-link-circle:after {
+.circle-link-circle:before {
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 46%;
@@ -577,19 +582,13 @@ li {
     cursor: pointer;
     color: #2b2a2a;
 }
-.circle-link-circle:before {
-    background-color: #ff4f4f;
-    transform-origin: center;
-    transform: translate(-50%,-50%) scale(1);
-    background-position: 50%;
-    background-size: 23%;
-    background-image: url(../img/yazi.png);
-    background-repeat: no-repeat;
-}
+
 .circle-link-circle:hover::before {
     z-index: 1;
     width: 200%;
     height: 200%;
+    background-size: 25%;
+    background-repeat: no-repeat;
 }
 .circle_a:hover {
     text-decoration: none;
@@ -612,7 +611,7 @@ li {
     top: 100px;
     position: relative;
 }
-.member-subtitle, .profile-subtitle_sp {
+.member-subtitle_sp, .profile-subtitle_sp {
     align-self: center;
     margin-bottom: 40px;
     font-size: 1.2rem;
@@ -1167,7 +1166,7 @@ li {
     color:#fff;
     text-decoration: none;
     position: relative;
-    font: normal normal 600 16px/20px Open Sans;
+    font: normal normal 600 16px/20px sans-serif;
 }
 .menu_content {
     display: block;

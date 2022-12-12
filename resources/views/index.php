@@ -228,8 +228,21 @@
 
 
             <footer class="footer_sp" style="margin-top: 30px; padding: 40px 20px;">
-                <a href="https://otaku4704.com/contact"><img src="https://otaku4704.com/img/yazi.png">　Contact Form</a>
+                <a href="https://otaku4704.com/contact"><img src="https://otaku4704.com/img/yazi.png" style="width: 16px;">　Contact Form</a>
                 <div class="footer_text_sp">THOSE WHO KNOW<br>ONLY ONE<br>COUNTRY KNOW<br>NO COUNTRY</div>
             </footer>
         </body>
     </div>
+<script type="text/javascript">
+  // iPhone iPad iPod Android の判別
+  if (
+    navigator.userAgent.indexOf('iPhone') > 0 ||
+    navigator.userAgent.indexOf('iPad') > 0 ||
+    navigator.userAgent.indexOf('iPod') > 0 ||
+    navigator.userAgent.indexOf('Android') > 0 )
+  {
+    document.getElementById("registration_pc").remove();
+  } else {
+    document.getElementById("registration_sp").remove();
+  }
+</script>

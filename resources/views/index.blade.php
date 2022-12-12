@@ -26,7 +26,7 @@
 <div id="member_border"></div>
 <div class="member" id="member">
     <h2 class="member-title" id="member1">Member</h2>
-    <div class="member-subtitle" id="member2">/OTAKU CORE MEMBER</div>
+    <div class="member-subtitle" id="member2">/ OTAKU CORE MEMBER</div>
     <div class="member-content">
         <div class="member_item">
             <dl class="member_item-row">
@@ -48,7 +48,7 @@
         <tr id="row1" class="profile-row"><th>Company</th><td ><span >株式会社おたく(OTAKU inc.)</span></td></tr>
         <tr id="row2" class="profile-row"><th >Founder</th> <td >代表取締役 梅谷 達男</td></tr>
         <tr id="row3" class="profile-row"><th >OFFICE</th> <td ><span >京都府京都市下京区富小路通六条下る栄町515番 NeOs 101</span></td></tr>
-        <tr id="row4" class="profile-row"><th >MAIL</th> <td ><span >info@arutega.jp</span></td></tr>
+        <tr id="row4" class="profile-row"><th >MAIL</th> <td ><span >info@otaku4704.com</span></td></tr>
         <tr id="row5" class="profile-row"><th >Capital</th> <td >9,000,000 円</td></tr>
         <tr id="row6" class="profile-row"><th >Business</th> <td >WEBサイト制作<br>店舗運営</td>
         </tr>
@@ -91,8 +91,8 @@
     <h2 class="profile-title " id="work_title1">Creative Work</h2> 
     <div class="member-subtitle" id="work_title2">/ PICK UP CASE STUDY</div> 
     <ul class="latestwork-lists latestwork_content">
-        <li class="latestwork-list" id="work_content"><a href="https://usagi.otaku4704.com/" class="coffee_a"><p class="latestwork-list-project">兎珈琲</p></a>
-        <a href="https://usagi.otaku4704.com/" class="circle_a"><div class="latestwork-list-link"><div class="circle-link circle-link-domestic"><div class="circle-link-circle"></div>
+        <li class="latestwork-list" id="work_content"><p class="latestwork-list-project">兎珈琲</p>
+        <a href="https://usagi.otaku4704.com/" class="circle_a" target="_blank"><div class="latestwork-list-link"><div class="circle-link circle-link-domestic"><div class="circle-link-circle"></div>
         <span class="circle-link-text">View More</span></div></div></a></li>
         <div id="work_border2"></div>
     </ul>
@@ -107,7 +107,8 @@
 
 <img src="{{ asset('img/otaku_main.png') }}" class="main_img_sp" id="main_img">
 <div class="bg_black" id="bg_black">
-    <div class="top_text_sp1" id="top_black1">株式会社おたくは</div>
+    <div class="top_text_sp1" id="top_white1" style="background-color:#fff;top: calc(2.5vw + 35px);">株式会社おたくは</div>
+    <div class="top_text_sp1" id="top_black1" style="color: #000;">株式会社おたくは</div>
     <div class="top_text_sp1" id="top_black2">各専門分野が集まった</div>
     <div class="top_text_sp1" id="top_black3">プロフェッショナルチームです</div>
     <div class="otaku_big_text" id="big_text">OTAKU WA SAIKYOU NANO DESU</div>
@@ -127,18 +128,20 @@
         We will continue to fight the world so that we can pass the baton of Japan to the children of the future.<br><br>
         Our mission is to create, connect, communicate, and nurture.<br><br>
         We believe that this is our mission.
+        <div id="member_jump"></div>
     </div>
 </div>
 
 <div id="member_border"></div>
 <div class="sp_div">
     <h2 class="member-title_sp" id="member1">Member</h2>
-    <div class="member-subtitle" id="member2">/OTAKU CORE MEMBER</div>
+    <div class="member-subtitle_sp" id="member2">/OTAKU CORE MEMBER</div>
     <span class="member_item-name" id="member3">Tatsuo Umetani</span>
     <span class="member_item-position" id="member4">CEO</span>
     <div class="member_item-desc" id="member5">
         ARCHETYP Inc, LIG inc Phillipine での開発経て、I-ne IncでWeb Producerを担当。<br>主にコーポレートブランディング やブランドサイト制作を担当。<br>2019年ARUTEGA設立。CIの策定からデザイン・開発までを牽引。
     </div>
+    <div id="profile_jump"></div>
 </div>
 
 <div id="profile_border" style="margin:50px 5% 15px"></div>
@@ -148,7 +151,7 @@
     <div class="profile-logo_sp" id="profile3">OTAKU</div>
     <div class="strategy_sp">
         <div class="strategy-paragraph"><span class="st_text" id="st_text1">A RABBIT THAT </span></div>
-        <div class="strategy-paragraph"><span class="st_text" id="st_text2">NEVER SLEEPS </span><div class="strategy-paragraph-image" id="st_img1" style="float: right; top: 10px; position: relative;"></div></div>
+        <div class="strategy-paragraph"><span class="st_text" id="st_text2">NEVER SLEEPS </span><div class="strategy-paragraph-image" id="st_img1" style="float: right; top: 2px; position: relative;"></div></div>
         <div class="strategy-paragraph"><div class="strategy-paragraph-image" id="st_img2"></div><span class="st_text" id="st_text3"> WON'T LOSE</span></div>
         <div class="strategy-paragraph"><span class="st_text" id="st_text4">NO MATTER WHAT</span></div>
         <div class="strategy-paragraph st_text st_text5_sp" id="st_text5">/ 寝ない兎は負けない</div>
@@ -163,7 +166,7 @@
         <tr id="row1" class="profile-row"><th>Company</th><td ><span >株式会社おたく(OTAKU inc.)</span></td></tr>
         <tr id="row2" class="profile-row"><th >Founder</th> <td >代表取締役 梅谷 達男</td></tr>
         <tr id="row3" class="profile-row"><th >OFFICE</th> <td ><span >京都府京都市下京区富小路通六条下る栄町515番 NeOs 101</span></td></tr>
-        <tr id="row4" class="profile-row"><th >MAIL</th> <td ><span >info@arutega.jp</span></td></tr>
+        <tr id="row4" class="profile-row"><th >MAIL</th> <td ><span >info@otaku4704.com</span></td></tr>
         <tr id="row5" class="profile-row"><th >Capital</th> <td >9,000,000 円</td></tr>
         <tr id="row6" class="profile-row"><th >Business</th> <td >WEBサイト制作<br>店舗運営</td>
         </tr>
@@ -184,7 +187,7 @@
             <dl ><dt class="service-item_title_sp">建築・内装</dt> <dd class="service-item_desc">人間にとっても、地球にとっても、動物にとっても心地いいものを作ります。</dd></dl></div></li>
             <li class="service-item"><div class="sv_border" id="sv_border4"></div><div class="service-item_num_sp" id="sv_num4">04</div>
             <div class="sv_text" id="sv_text4"><h3 class="service-item_subtitle">Store Operation</h3>
-            <dl ><dt class="service-item_title_sp">店舗運営</dt> <dd class="service-item_desc">店舗の仕入、運営、卸まで一気通貫で行っています。</dd></dl></div></li>
+            <dl ><dt class="service-item_title_sp">店舗運営</dt> <dd class="service-item_desc">店舗の仕入、運営、卸まで一気通貫で行っています。<div id="work_jump"></div></dd></dl></div></li>
         </ul>
     </div>
 </div>
@@ -194,8 +197,8 @@
     <h2 class="profile-title_sp" id="work_title1">Creative Work</h2> 
     <div class="profile-subtitle_sp" id="work_title2">/ PICK UP CASE STUDY</div> 
     <ul class="latestwork-lists latestwork_content" style="padding:0;">
-        <li class="latestwork-list" id="work_content"><a href="https://usagi.otaku4704.com/" class="coffee_a"><p class="latestwork-list-project_sp">兎珈琲</p></a>
-        <a href="https://usagi.otaku4704.com/" class="circle_a"><div class="latestwork-list-link"><div class="circle-link circle-link-domestic" style="margin-bottom: 20px;"><div class="circle-link-circle"></div>
+        <li class="latestwork-list" id="work_content"><p class="latestwork-list-project_sp">兎珈琲</p>
+        <a href="https://usagi.otaku4704.com/" class="circle_a" target="_blank"><div class="latestwork-list-link"><div class="circle-link circle-link-domestic" style="margin-bottom: 20px;"><div class="circle-link-circle"></div>
         <span class="circle-link-text">View More</span></div></div></a></li>
         <div id="work_border2" style="margin-top: -20px;"></div>
     </ul>

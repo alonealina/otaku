@@ -1,7 +1,8 @@
 window.onload = function() {
     $('#main_img').css( 'opacity', '1' );
+    $('#main_img_sp').css( 'opacity', '1' );
 
- }
+}
 
 
 $(window).scroll(function(){
@@ -93,3 +94,11 @@ $(window).scroll(function(){
 
 })
 
+
+var menu = document.getElementsByClassName('menu_content_sp');
+
+for (i = 0; i < menu.length; i++) {
+    menu[i].addEventListener("click", function() {
+        document.getElementById('menu-btn-check').checked = false;
+  });
+}
