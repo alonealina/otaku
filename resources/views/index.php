@@ -111,7 +111,7 @@
 
         <footer style="background: #011E40;"  >
                 <div class="footer_menu_flex">
-                    <div class=""><a href="https://otaku4704.com/contact"><img src="https://otaku4704.com/img/yazi.png">　Contact Form</a></div>
+                    <div class=""><a href="https://otaku4704.com/contact"><img src="https://otaku4704.com/img/yazi.png" style="width: 16px;">　Contact Form</a></div>
                     <div class="footer_text">THOSE WHO KNOW ONLY ONE <br> COUNTRY KNOW NO COUNTRY</div>
                 </div>
 

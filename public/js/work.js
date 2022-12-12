@@ -102,3 +102,11 @@ for (i = 0; i < menu.length; i++) {
         document.getElementById('menu-btn-check').checked = false;
   });
 }
+
+var menu = document.getElementsByClassName('menu_content');
+
+for (i = 0; i < menu.length; i++) {
+    menu[i].addEventListener("click", function() {
+        document.getElementById('menu-btn-check').checked = false;
+  });
+}
