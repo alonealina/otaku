@@ -1208,7 +1208,12 @@ li {
 }
 
 .menu_content_sp:hover {
-    color: #505050;
+    color: #fff;
+    text-decoration: none;
+}
+.menu_content:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
 .up, .down {

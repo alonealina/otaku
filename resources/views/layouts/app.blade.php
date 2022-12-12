@@ -36,7 +36,7 @@
                     <a href="{{ route('index') }}#work" class="">CREATIVE WORK</a><br>
                     <a href="{{ route('contact') }}" class="">CONTACT</a><br>
                     @endif
-                    <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank">SNS　<img src="{{ asset('img/yazi.png') }}"></a><br>
+                    <a href="https://www.instagram.com/_usagicoffee/?igshid=YmMyMTA2M2Y%3D" class="" target="_blank">SNS　<img src="{{ asset('img/yazi.png') }}" style="width: 15px;"></a><br>
                 </div>
             </header>
             @else

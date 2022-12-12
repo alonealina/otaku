@@ -109,8 +109,6 @@
 
 
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="https://otaku4704.com/js/work.js"></script>
         <footer style="background: #011E40;"  >
                 <div class="footer_menu_flex">
                     <div class=""><a href="https://otaku4704.com/contact"><img src="https://otaku4704.com/img/yazi.png">　Contact Form</a></div>
@@ -233,6 +231,9 @@
             </footer>
         </body>
     </div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://otaku4704.com/js/work.js"></script>
+
 <script type="text/javascript">
   // iPhone iPad iPod Android の判別
   if (
